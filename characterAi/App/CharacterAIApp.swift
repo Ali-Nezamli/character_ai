@@ -59,7 +59,7 @@ struct CharacterAIApp: App {
             //
             NavigationStack(path: $router.path) {
                 // Root view - this is shown when path is empty
-                HomeView()
+                MainTabView()
                     // ============================================================
                     // NAVIGATION DESTINATIONS
                     // ============================================================

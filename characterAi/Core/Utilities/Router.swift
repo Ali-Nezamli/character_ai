@@ -71,7 +71,10 @@ import Combine
 /// - Exhaustive: Switch statements must handle all cases
 ///
 enum Route: Hashable {
-    /// Home screen (root)
+    // (root)
+    case mainTabView
+
+    /// Home screen
     case home
 
     /// Experience/Character detail screen
@@ -177,3 +180,53 @@ final class Router: ObservableObject {
 //        ExperienceCardView(character: character)
 //    }
 //
+
+//@EnvironmentObject is needed because of how SwiftUI shares data across views. Here's why:
+//
+//The Problem Without It
+//
+//// Without @EnvironmentObject - you'd have to pass router manually through EVERY view
+//struct HomeView: View {
+//    let router: Router  // Must pass in init
+//    
+//    var body: some View {
+//        CharacterListView(router: router)  // Pass again
+//            .sheet(isPresented: ...) {
+//                DetailView(router: router)  // Pass again
+//            }
+//    }
+//}
+//This gets messy fast with deep view hierarchies.
+//
+//The Solution With @EnvironmentObject
+//
+//// In App - inject ONCE at the top
+//@StateObject private var router = Router()
+//
+//WindowGroup {
+//    NavigationStack(path: $router.path) {
+//        HomeView()
+//    }
+//    .environmentObject(router)  // Inject here
+//}
+//
+//// In ANY child view - access directly
+//struct HomeView: View {
+//    @EnvironmentObject var router: Router  // Auto-injected
+//    
+//    var body: some View {
+//        Button("Go") {
+//            router.navigate(to: .experienceDetail(character))
+//        }
+//    }
+//}
+//Key Points
+//Property Wrapper    Purpose
+//@StateObject    Creates and owns the object (use in App/parent)
+//@EnvironmentObject    Receives an object from ancestor view
+//@ObservedObject    Receives object passed directly via init
+//Why Router Needs It
+//Router is created once in the App
+//It needs to be accessible from any view for navigation
+//@EnvironmentObject lets SwiftUI inject it automatically through the view hierarchy
+//Without @EnvironmentObject, you'd get a crash because router would be nil - SwiftUI wouldn't know where to get it from.

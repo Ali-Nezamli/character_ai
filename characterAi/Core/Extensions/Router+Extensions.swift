@@ -12,6 +12,8 @@ extension Route {
     @ViewBuilder
     func destination() -> some View {
         switch self {
+        case .mainTabView:
+            MainTabView()
         case .home:
             // Usually you don't navigate TO home, you pop back
             HomeView()
