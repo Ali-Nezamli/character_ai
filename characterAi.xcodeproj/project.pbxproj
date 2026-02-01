@@ -7,13 +7,26 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		DF9B47892F2A57CF004304FF /* pass2pastios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pass2pastios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF9B47892F2A57CF004304FF /* characterAi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = characterAi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		DF9B478C2F2A57CF004304FF /* Exceptions for "characterAi" folder in "characterAi" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = DF9B47882F2A57CF004304FF /* characterAi */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		DF9B478B2F2A57CF004304FF /* pass2pastios */ = {
+		DF9B478B2F2A57CF004304FF /* characterAi */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = pass2pastios;
+			exceptions = (
+				DF9B478C2F2A57CF004304FF /* Exceptions for "characterAi" folder in "characterAi" target */,
+			);
+			path = characterAi;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +45,7 @@
 		DF9B47802F2A57CF004304FF = {
 			isa = PBXGroup;
 			children = (
-				DF9B478B2F2A57CF004304FF /* pass2pastios */,
+				DF9B478B2F2A57CF004304FF /* characterAi */,
 				DF9B478A2F2A57CF004304FF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +53,7 @@
 		DF9B478A2F2A57CF004304FF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DF9B47892F2A57CF004304FF /* pass2pastios.app */,
+				DF9B47892F2A57CF004304FF /* characterAi.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +61,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DF9B47882F2A57CF004304FF /* pass2pastios */ = {
+		DF9B47882F2A57CF004304FF /* characterAi */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DF9B47962F2A57D1004304FF /* Build configuration list for PBXNativeTarget "pass2pastios" */;
+			buildConfigurationList = DF9B47962F2A57D1004304FF /* Build configuration list for PBXNativeTarget "characterAi" */;
 			buildPhases = (
 				DF9B47852F2A57CF004304FF /* Sources */,
 				DF9B47862F2A57CF004304FF /* Frameworks */,
@@ -61,13 +74,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				DF9B478B2F2A57CF004304FF /* pass2pastios */,
+				DF9B478B2F2A57CF004304FF /* characterAi */,
 			);
-			name = pass2pastios;
+			name = characterAi;
 			packageProductDependencies = (
 			);
-			productName = pass2pastios;
-			productReference = DF9B47892F2A57CF004304FF /* pass2pastios.app */;
+			productName = characterAi;
+			productReference = DF9B47892F2A57CF004304FF /* characterAi.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +98,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DF9B47842F2A57CF004304FF /* Build configuration list for PBXProject "pass2pastios" */;
+			buildConfigurationList = DF9B47842F2A57CF004304FF /* Build configuration list for PBXProject "characterAi" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,7 +112,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DF9B47882F2A57CF004304FF /* pass2pastios */,
+				DF9B47882F2A57CF004304FF /* characterAi */,
 			);
 		};
 /* End PBXProject section */
@@ -253,6 +266,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = characterAi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -263,7 +277,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.alinezamli.pass2pastios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alinezamli.characterAi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -284,6 +298,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = characterAi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -294,7 +309,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.alinezamli.pass2pastios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alinezamli.characterAi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -309,7 +324,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DF9B47842F2A57CF004304FF /* Build configuration list for PBXProject "pass2pastios" */ = {
+		DF9B47842F2A57CF004304FF /* Build configuration list for PBXProject "characterAi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DF9B47942F2A57D1004304FF /* Debug */,
@@ -318,7 +333,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DF9B47962F2A57D1004304FF /* Build configuration list for PBXNativeTarget "pass2pastios" */ = {
+		DF9B47962F2A57D1004304FF /* Build configuration list for PBXNativeTarget "characterAi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DF9B47972F2A57D1004304FF /* Debug */,
