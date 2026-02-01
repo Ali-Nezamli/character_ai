@@ -272,8 +272,10 @@ extension Route {
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Copyright (c) 2026 Ali Nezamli. All Rights Reserved.
+
+This is proprietary software. Unauthorized copying, modification, distribution, or use of this software is strictly prohibited. See the [LICENSE](LICENSE) file for details.
 
 ## Author
 
-**Ali Nezamli** - [GitHub](https://github.com/yourusername)
+**Ali Nezamli**
