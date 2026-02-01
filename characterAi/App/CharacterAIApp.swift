@@ -20,7 +20,7 @@ import SwiftData
 import Combine
 
 @main
-struct Pass2PastiosApp: App {
+struct CharacterAIApp: App {
 
     // MARK: - State Objects
     /// Router manages all navigation in the app
