@@ -10,14 +10,20 @@ import SwiftUI
 struct PrimaryButton: View {
     let title: String
     let action: () -> Void
+    var width: CGFloat? = nil
+    var height: CGFloat? = nil
     
     var body: some View {
         Button(action: action) {
             Text(title)
                 .font(.system(size: 18, weight: .semibold))
                 .foregroundStyle(.white)
-                .frame(maxWidth: .infinity)
-                .padding(.vertical, 18)
+                .frame(
+                    maxWidth: width == nil ? .infinity : nil,
+                    minHeight: height
+                )
+                .frame(width: width)
+                .padding(.vertical, height == nil ? 18 : 0)
                 .background(
                     LinearGradient(
                         colors: [Color(hex: "7C3AED"), Color(hex: "4F46E5")],

@@ -17,14 +17,13 @@ struct MainTabView: View {
                     Image(systemName: "house.fill")
                     Text("Home")
                 }
-                .tag(0)
-//            
-//            SearchView()
-//                .tabItem {
-//                    Image(systemName: "magnifyingglass")
-//                    Text("Search")
-//                }
-//                .tag(1)
+                .tag(0)          
+            ProfileView()
+                .tabItem {
+                    Image(systemName: "person.fill")
+                    Text("Profile")
+                }
+                .tag(1)
 //            
 //            FavoritesView()
 //                .tabItem {

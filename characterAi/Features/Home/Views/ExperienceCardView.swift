@@ -42,7 +42,7 @@ struct ExperienceCardView: View {
                     .lineLimit(2)
                 Spacer()
                 HStack {
-                    Text(String(character.rating))
+                    Text(String(format: "%.1f",character.rating))
                         .font(.system(size: 14))
                         .foregroundStyle(.white)
                         
